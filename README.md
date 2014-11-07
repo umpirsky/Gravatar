@@ -1,0 +1,4 @@
+Gravatar
+========
+
+Lightweight Gravatar library.

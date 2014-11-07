@@ -1,0 +1,24 @@
+{
+    "name": "umpirsky/gravatar",
+    "type": "library",
+    "description": "Lightweight Gravatar library.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saša Stamenković",
+            "email": "umpirsky@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~5.3"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "Gravatar": "src" }
+    }
+}
