@@ -15,7 +15,8 @@ class Gravatar
         $this->resolver = new OptionsResolver();
 
         $this->resolver->setDefaults(array(
-            'size' => null,
+            'size'   => null,
+            'rating' => null,
         ));
 
         $this->resolveOptions($options);
