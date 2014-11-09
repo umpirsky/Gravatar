@@ -15,8 +15,9 @@ class Gravatar
         $this->resolver = new OptionsResolver();
 
         $this->resolver->setDefaults(array(
-            'size'   => null,
-            'rating' => null,
+            'size'    => null,
+            'rating'  => null,
+            'default' => null,
         ));
 
         $this->resolveOptions($options);
@@ -46,5 +47,9 @@ class Gravatar
         }
 
         $this->options = $this->resolver->resolve($options);
+
+        if ($this->options['default']) {
+            $this->options['default'] = rawurlencode($this->options['default']);
+        }
     }
 }
