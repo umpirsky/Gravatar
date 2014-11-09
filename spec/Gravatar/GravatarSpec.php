@@ -16,4 +16,16 @@ class GravatarSpec extends ObjectBehavior
     {
         $this->getUrl('umpirsky@gmail.com')->shouldReturn('http://www.gravatar.com/avatar/71a0abb69d81544d7cb390e186d5d123');
     }
+
+    function it_gets_gravatar_url_with_proper_size_if_custom_size_passed()
+    {
+        $this->getUrl('umpirsky@gmail.com', array('size' => 40))->shouldReturn('http://www.gravatar.com/avatar/71a0abb69d81544d7cb390e186d5d123?size=40');
+    }
+
+    function it_gets_gravatar_url_with_proper_size_if_constructed_with_custom_size()
+    {
+        $this->beConstructedWith(array('size' => 40));
+
+        $this->getUrl('umpirsky@gmail.com')->shouldReturn('http://www.gravatar.com/avatar/71a0abb69d81544d7cb390e186d5d123?size=40');
+    }
 }
