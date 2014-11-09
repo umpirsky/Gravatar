@@ -40,6 +40,13 @@ class Gravatar
         return $url;
     }
 
+    public function setBaseUrl($baseUrl)
+    {
+        $this->baseUrl = $baseUrl;
+
+        return $this;
+    }
+
     private function resolveOptions(array $options)
     {
         if ($this->options) {
