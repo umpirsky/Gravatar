@@ -1,5 +1,4 @@
-Gravatar
-========
+# Gravatar [![Build Status](https://travis-ci.org/umpirsky/Gravatar.svg)](https://travis-ci.org/umpirsky/Gravatar)
 
 Lightweight Gravatar library.
 
